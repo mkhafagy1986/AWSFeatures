@@ -1,5 +1,18 @@
+<amplify-authenticator></amplify-authenticator> 
+
+
+<amplify-photo-picker 
+    path="pics"
+    (picked)="onImagePicked($event)"
+    (loaded)="onImageLoaded($event)">
+</amplify-photo-picker>
+
+<amplify-s3-album 
+    path="pics" 
+    (selected)="onAlbumImageSelected($event)">
+</amplify-s3-album>
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
+<!-- <div style="text-align:center">
   <h1>
     Welcome to {{ title }}!
   </h1>
@@ -18,4 +31,4 @@
   </li>
 </ul>
 
-<router-outlet></router-outlet>
+<router-outlet></router-outlet> -->
